@@ -1,36 +1,90 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🌿 Wildlife Ecology (2026) — NPTEL MOOC Practice Quiz
 
-## Getting Started
+A fast, modern, and accessible practice quiz website for the **NPTEL "Wildlife Ecology (2026)"** weekly assignments.
 
-First, run the development server:
+Built with **Next.js (App Router)**, **TypeScript**, and **Tailwind CSS**.
 
+---
+
+## ✨ Features
+
+- **All 120 Curated MCQs**: All 12 assignments (10 questions each) directly sourced from official course materials with verified errata corrections (Week 9 Q5, Q6, Q7).
+- **Two Flexible Quiz Modes**:
+  - **In Order**: Questions and options in their original chronological order.
+  - **Fisher–Yates Shuffled**: True randomized shuffling of both question order and option positions. Answer correctness is decoupled from position and evaluated by boolean flag.
+- **Assignment-Wise & Full Mock**:
+  - Practice any single assignment (10 questions).
+  - Take the comprehensive **120-question mock exam** with an assignment-by-assignment mastery breakdown at the end.
+- **Instant Interactive Feedback**:
+  - Locking question mechanism upon choice.
+  - Correct answer highlights in green, incorrect choice highlights in red while revealing the correct answer.
+- **Keyboard Shortcuts**:
+  - `1` – `4` or `A` – `D`: Select options.
+  - `→` or `Enter`: Next question.
+  - `←`: Previous question.
+- **Question Palette**:
+  - Number grid showing live state: Unanswered (grey), Correct (green), Wrong (red).
+  - One-click navigation to jump between questions.
+- **Progress & Best Scores**:
+  - Saved in browser `localStorage` with safe try/catch error handling.
+  - Refreshing mid-quiz does not lose your in-progress answers or active question.
+  - Best scores displayed on dashboard cards.
+- **Review & Targeted Practice**:
+  - Complete review list showing your choices vs correct answers.
+  - Filter by **All**, **Wrong only**, or **Skipped**.
+  - **Retry Missed Questions**: Starts a focused quiz containing only the questions you got wrong.
+- **Design & Accessibility**:
+  - Earthy nature theme (greens, sage, dark moss slate).
+  - Dark mode support with instant toggle.
+  - Fully responsive across desktop, tablet, and mobile (tested at 375px+).
+  - High-contrast focus rings and `prefers-reduced-motion` support.
+
+---
+
+## 🚀 Getting Started
+
+### 1. Install Dependencies
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+npm install
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### 2. Run Locally
+```bash
+npm run dev
+```
+Open [http://localhost:3000](http://localhost:3000) (or `http://localhost:3001` if port 3000 is occupied).
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### 3. Run Unit Tests (Vitest)
+```bash
+npm test
+```
+Runs the full suite verifying question counts, option structures, Fisher-Yates shuffle integrity, and scoring formulas.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### 4. Build for Production
+```bash
+npm run build
+```
 
-## Learn More
+---
 
-To learn more about Next.js, take a look at the following resources:
+## 🚢 Deploying to Vercel
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+This repository is ready for zero-config deployment on [Vercel](https://vercel.com):
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+1. Push your repository to GitHub (already linked to `https://github.com/vandit-bajaj/wildlife-ecology-MOOC-quiz.git`).
+2. Go to [vercel.com/new](https://vercel.com/new).
+3. Import `wildlife-ecology-MOOC-quiz`.
+4. Keep default settings:
+   - Framework Preset: **Next.js**
+   - Root Directory: `./`
+   - Build Command: `next build`
+   - Output Directory: `.next`
+5. Click **Deploy**!
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 📖 Course Credit & Attribution
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- **Course**: NPTEL "Wildlife Ecology" (2026)
+- **Built by**: Vandit Bajaj
+- **Inspiration**: [ala-quiz.vercel.app](https://ala-quiz.vercel.app/)

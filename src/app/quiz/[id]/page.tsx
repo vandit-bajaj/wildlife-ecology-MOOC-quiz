@@ -1,8 +1,27 @@
+import type { Metadata } from 'next';
 import React, { Suspense } from 'react';
 import { QuizClient } from './QuizClient';
+import { getAssignmentById } from '@/lib/quiz';
 
 interface PageProps {
   params: Promise<{ id: string }>;
+}
+
+export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
+  const { id } = await params;
+  if (id.toLowerCase() === 'all') {
+    return {
+      title: 'Full Quiz (All 120 Questions) | Wildlife Ecology',
+      description:
+        'Take all 120 questions across 12 assignments with instant answer checking and complete per-assignment scoring.',
+    };
+  }
+  const assignment = getAssignmentById(id);
+  const title = assignment ? assignment.title : `Assignment ${id.toUpperCase()}`;
+  return {
+    title: `${title} Quiz | Wildlife Ecology`,
+    description: `Practice 10 verified multiple choice questions for NPTEL Wildlife Ecology ${title}.`,
+  };
 }
 
 export function generateStaticParams() {
