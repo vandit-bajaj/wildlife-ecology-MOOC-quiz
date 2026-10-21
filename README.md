@@ -77,33 +77,6 @@ Preparing for NPTEL certification exams by reading static PDF answer sheets is p
 
 ---
 
-## 🚀 Quick Start
-
-### 1. Clone & Install
-```bash
-git clone https://github.com/vandit-bajaj/wildlife-ecology-MOOC-quiz.git
-cd wildlife-ecology-MOOC-quiz
-npm install
-```
-
-### 2. Run Locally
-```bash
-npm run dev
-```
-Open **[http://localhost:3000](http://localhost:3000)** (or `http://localhost:3001` if port 3000 is occupied).
-
-### 3. Run Test Suite
-```bash
-npm test
-```
-
-### 4. Build Production Bundle
-```bash
-npm run build
-```
-
----
-
 ## 📁 Project Structure
 
 ```text
@@ -156,4 +129,3 @@ src/
 ## 📄 License & Attribution
 
 - Built as an open-source study companion for the **NPTEL "Wildlife Ecology (2026)"** MOOC.
-- Design inspiration: [ala-quiz.vercel.app](https://ala-quiz.vercel.app/).
