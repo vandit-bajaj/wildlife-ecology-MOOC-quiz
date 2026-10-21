@@ -21,7 +21,7 @@ export function Footer() {
             </span>
             <span>•</span>
             <a
-              href="https://github.com/vandit-bajaj/wildlife-ecology-MOOC-quiz"
+              href="https://github.com/vandit-bajaj"
               target="_blank"
               rel="noopener noreferrer"
               className="hover:text-emerald-600 dark:hover:text-emerald-400 underline underline-offset-2 transition-colors"
@@ -30,7 +30,7 @@ export function Footer() {
             </a>
             <span>•</span>
             <a
-              href="https://linkedin.com"
+              href="https://www.linkedin.com/in/vandit-bajaj-373829209/"
               target="_blank"
               rel="noopener noreferrer"
               className="hover:text-emerald-600 dark:hover:text-emerald-400 underline underline-offset-2 transition-colors"

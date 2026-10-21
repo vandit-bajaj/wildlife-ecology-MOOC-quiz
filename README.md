@@ -86,5 +86,5 @@ This repository is ready for zero-config deployment on [Vercel](https://vercel.c
 ## 📖 Course Credit & Attribution
 
 - **Course**: NPTEL "Wildlife Ecology" (2026)
-- **Built by**: Vandit Bajaj
+- **Built by**: [Vandit Bajaj](https://www.linkedin.com/in/vandit-bajaj-373829209/) ([@vandit-bajaj](https://github.com/vandit-bajaj))
 - **Inspiration**: [ala-quiz.vercel.app](https://ala-quiz.vercel.app/)

@@ -59,21 +59,21 @@ export function Navbar() {
           {/* Social / Contact Dock */}
           <div className="flex items-center gap-0.5 sm:gap-1 text-stone-600 dark:text-stone-400">
             <a
-              href="https://github.com/vandit-bajaj/wildlife-ecology-MOOC-quiz"
+              href="https://github.com/vandit-bajaj"
               target="_blank"
               rel="noopener noreferrer"
-              aria-label="GitHub Repository"
-              title="GitHub Repository"
+              aria-label="GitHub Profile"
+              title="GitHub: @vandit-bajaj"
               className="p-2 rounded-lg hover:text-emerald-600 dark:hover:text-emerald-400 hover:bg-emerald-500/10 transition-colors"
             >
               <GithubIcon className="w-4 h-4" />
             </a>
             <a
-              href="https://linkedin.com"
+              href="https://www.linkedin.com/in/vandit-bajaj-373829209/"
               target="_blank"
               rel="noopener noreferrer"
-              aria-label="LinkedIn"
-              title="LinkedIn Profile"
+              aria-label="LinkedIn Profile"
+              title="LinkedIn: Vandit Bajaj"
               className="p-2 rounded-lg hover:text-emerald-600 dark:hover:text-emerald-400 hover:bg-emerald-500/10 transition-colors"
             >
               <LinkedinIcon className="w-4 h-4" />
