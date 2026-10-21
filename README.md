@@ -1,66 +1,88 @@
-# 🌿 Wildlife Ecology (2026) — NPTEL MOOC Practice Quiz
+<div align="center">
 
-A fast, modern, and accessible practice quiz website for the **NPTEL "Wildlife Ecology (2026)"** weekly assignments.
+# 🌿 Wildlife Ecology (2026) — Practice Quiz
 
-> 🌐 **Live Website**: [https://wildlife-ecology-mooc-quiz.vercel.app](https://wildlife-ecology-mooc-quiz.vercel.app)
+**An interactive, accessible, and fast practice quiz platform for the NPTEL "Wildlife Ecology (2026)" course.**
 
-Built with **Next.js (App Router)**, **TypeScript**, and **Tailwind CSS**. Designed & developed by [Vandit Bajaj](https://www.linkedin.com/in/vandit-bajaj-373829209/).
+[![Live Demo](https://img.shields.io/badge/Demo-Live%20on%20Vercel-15803d?style=for-the-badge&logo=vercel&logoColor=white)](https://wildlife-ecology-mooc-quiz.vercel.app)
+[![Next.js](https://img.shields.io/badge/Next.js-16.4-black?style=for-the-badge&logo=next.js&logoColor=white)](https://nextjs.org/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-5.0-3178c6?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
+[![Tailwind CSS](https://img.shields.io/badge/Tailwind-v4-38bdf8?style=for-the-badge&logo=tailwindcss&logoColor=white)](https://tailwindcss.com/)
+[![Vitest](https://img.shields.io/badge/Tests-7%20Passed-729B1B?style=for-the-badge&logo=vitest&logoColor=white)](https://vitest.dev/)
+
+<p align="center">
+  <a href="https://wildlife-ecology-mooc-quiz.vercel.app"><strong>Explore The Live App »</strong></a>
+  <br />
+  <a href="https://wildlife-ecology-mooc-quiz.vercel.app/dashboard">View Dashboard</a>
+  ·
+  <a href="https://wildlife-ecology-mooc-quiz.vercel.app/quiz/all">Full 120-Q Mock</a>
+  ·
+  <a href="https://github.com/vandit-bajaj/wildlife-ecology-MOOC-quiz/issues">Report Issue</a>
+</p>
+
+Designed and developed with care by **[Vandit Bajaj](https://www.linkedin.com/in/vandit-bajaj-373829209/)**.
+
+</div>
 
 ---
 
-## 🌿 About The Project
+## 📖 Overview
 
-Preparing for NPTEL certification exams often means passively reading through dozens of static PDF answer keys. This approach makes it easy to mistake familiarity for true mastery, without actively testing recall or timing.
+Preparing for NPTEL certification exams by reading static PDF answer sheets is passive and often leads to overconfidence. **Wildlife Ecology Quiz** turns the complete 12-week course curriculum (120 questions across 12 assignments) into an active, test-driven study experience.
 
-**Wildlife Ecology Quiz** transforms the complete 12-week NPTEL curriculum (120 questions across 12 assignments) into a fast, gamified, and responsive learning web application:
+### Key Highlights
+* **Active Recall**: Immediate answer validation with locked choices and auto-reveal of correct options.
+* **Anti-Memorization Engine**: Uses the **Fisher–Yates algorithm** to randomize question sequences and option choices so you learn concepts, not option letters.
+* **Targeted Revision**: Finished a quiz with mistakes? Click **"Retry only wrong questions"** to focus solely on your knowledge gaps.
+* **Zero Friction**: No accounts, no logins, and no servers. Runs entirely in your browser with automatic `localStorage` persistence.
 
-- **Active Recall Over Passive Reading**: Test yourself question-by-question with immediate answer validation and explanations.
-- **Anti-Memorization Engine**: Real exams don't preserve predictable option positions. The Fisher–Yates engine shuffles both the question sequence and option order while evaluating correctness via robust boolean flags rather than indices.
-- **Targeted Revision ("Retry Missed Questions")**: Finished a quiz with errors? One click launches a customized practice drill containing only the questions you got wrong until you achieve 100% mastery.
-- **Zero Friction & Offline-First**: No signup, no login, and no backend dependencies. Everything runs smoothly in the browser with safe `localStorage` caching for in-progress attempts and personal best scores.
-- **Full Mock Simulation**: Complete 120-question comprehensive mock exam featuring detailed per-assignment mastery analytics upon completion.
+---
+
+## 🎯 Quiz Modes
+
+| Mode | Description | Best For |
+|---|---|---|
+| **Assignment-Wise (In Order)** | 10 questions per weekly assignment, in chronological textbook order. | Initial weekly practice and conceptual revision. |
+| **Assignment-Wise (Shuffled)** | 10 questions shuffled with randomized option order (A, B, C, D). | Testing recall without positional bias. |
+| **Full Mock (In Order)** | All 120 questions from Assignment 1 to 12 in sequence. | End-of-semester comprehensive review. |
+| **Full Mock (Shuffled)** | All 120 questions and all options randomized via Fisher–Yates. | Simulating true exam conditions. |
 
 ---
 
 ## ✨ Features
 
-- **All 120 Curated MCQs**: All 12 assignments (10 questions each) directly sourced from official course materials with verified errata corrections (Week 9 Q5, Q6, Q7).
-- **Two Flexible Quiz Modes**:
-  - **In Order**: Questions and options in their original chronological order.
-  - **Fisher–Yates Shuffled**: True randomized shuffling of both question order and option positions. Answer correctness is decoupled from position and evaluated by boolean flag.
-- **Assignment-Wise & Full Mock**:
-  - Practice any single assignment (10 questions).
-  - Take the comprehensive **120-question mock exam** with an assignment-by-assignment mastery breakdown at the end.
-- **Instant Interactive Feedback**:
-  - Locking question mechanism upon choice.
-  - Correct answer highlights in green, incorrect choice highlights in red while revealing the correct answer.
-- **Keyboard Shortcuts**:
-  - `1` – `4` or `A` – `D`: Select options.
-  - `→` or `Enter`: Next question.
-  - `←`: Previous question.
-- **Question Palette**:
-  - Number grid showing live state: Unanswered (grey), Correct (green), Wrong (red).
-  - One-click navigation to jump between questions.
-- **Progress & Best Scores**:
-  - Saved in browser `localStorage` with safe try/catch error handling.
-  - Refreshing mid-quiz does not lose your in-progress answers or active question.
-  - Best scores displayed on dashboard cards.
-- **Review & Targeted Practice**:
-  - Complete review list showing your choices vs correct answers.
-  - Filter by **All**, **Wrong only**, or **Skipped**.
-  - **Retry Missed Questions**: Starts a focused quiz containing only the questions you got wrong.
-- **Design & Accessibility**:
-  - Earthy nature theme (greens, sage, dark moss slate).
-  - Dark mode support with instant toggle.
-  - Fully responsive across desktop, tablet, and mobile (tested at 375px+).
-  - High-contrast focus rings and `prefers-reduced-motion` support.
+- **120 Verified Questions**: Direct import from official NPTEL course assignments, including verified corrections for errata (Week 9 Q5, Q6, Q7).
+- **Keyboard Shortcuts**: Complete hands-on-keyboard navigation for speed:
+  - `1` – `4` or `A` – `D`: Select option.
+  - `→` or `Enter`: Advance to next question.
+  - `←`: Return to previous question.
+- **Interactive Question Palette**: Visual numbered grid tracking unanswered (grey), correct (green), and incorrect (red) questions.
+- **Full Assignment Analytics**: Detailed mastery table breaking down your score assignment-by-assignment at the end of the full mock.
+- **Offline Progress Saving**: Safe, SSR-guarded `localStorage` sync ensures refreshing never loses your current quiz or best scores.
+- **Nature Theme & Dark Mode**: Organic earth and emerald tones, smooth micro-interactions, and accessible high-contrast focus indicators.
 
 ---
 
-## 🚀 Getting Started
+## 🛠️ Tech Stack
 
-### 1. Install Dependencies
+| Layer | Technology |
+|---|---|
+| **Framework** | [Next.js 16](https://nextjs.org/) (App Router, Turbopack) |
+| **Library** | [React 19](https://react.dev/) |
+| **Language** | [TypeScript](https://www.typescriptlang.org/) |
+| **Styling** | [Tailwind CSS v4](https://tailwindcss.com/) |
+| **Icons** | [Lucide React](https://lucide.dev/) |
+| **Unit Testing** | [Vitest](https://vitest.dev/) (7 passing test suites) |
+| **Hosting** | [Vercel](https://vercel.com/) (Edge CDN prerendered) |
+
+---
+
+## 🚀 Quick Start
+
+### 1. Clone & Install
 ```bash
+git clone https://github.com/vandit-bajaj/wildlife-ecology-MOOC-quiz.git
+cd wildlife-ecology-MOOC-quiz
 npm install
 ```
 
@@ -68,39 +90,70 @@ npm install
 ```bash
 npm run dev
 ```
-Open [http://localhost:3000](http://localhost:3000) (or `http://localhost:3001` if port 3000 is occupied).
+Open **[http://localhost:3000](http://localhost:3000)** (or `http://localhost:3001` if port 3000 is occupied).
 
-### 3. Run Unit Tests (Vitest)
+### 3. Run Test Suite
 ```bash
 npm test
 ```
-Runs the full suite verifying question counts, option structures, Fisher-Yates shuffle integrity, and scoring formulas.
 
-### 4. Build for Production
+### 4. Build Production Bundle
 ```bash
 npm run build
 ```
 
 ---
 
-## 🚢 Deploying to Vercel
+## 📁 Project Structure
 
-This repository is ready for zero-config deployment on [Vercel](https://vercel.com):
-
-1. Push your repository to GitHub (already linked to `https://github.com/vandit-bajaj/wildlife-ecology-MOOC-quiz.git`).
-2. Go to [vercel.com/new](https://vercel.com/new).
-3. Import `wildlife-ecology-MOOC-quiz`.
-4. Keep default settings:
-   - Framework Preset: **Next.js**
-   - Root Directory: `./`
-   - Build Command: `next build`
-   - Output Directory: `.next`
-5. Click **Deploy**!
+```text
+src/
+├── app/
+│   ├── layout.tsx              # Root layout with ThemeProvider, Navbar & Footer
+│   ├── page.tsx                # Landing hero page with course overview
+│   ├── globals.css             # Nature theme tokens & a11y focus rings
+│   ├── icon.svg                # Vector leaf favicon
+│   ├── dashboard/
+│   │   ├── page.tsx            # Dashboard SEO page metadata
+│   │   └── DashboardClient.tsx # 12 assignment cards + full quiz card
+│   └── quiz/[id]/
+│       ├── page.tsx            # Static params generator & suspense boundary
+│       └── QuizClient.tsx      # Core quiz engine, timer, and state machine
+├── components/
+│   ├── AssignmentCard.tsx      # Responsive card with mode toggles & badges
+│   ├── ConfirmationModal.tsx   # Unanswered warning modal
+│   ├── Footer.tsx              # Minimalist footer with quote & author links
+│   ├── FullQuizCard.tsx        # Hero card for the 120-question mock
+│   ├── ModeToggle.tsx          # Segmented pill toggle (In order vs Shuffled)
+│   ├── Navbar.tsx              # Sticky header with social links & theme toggle
+│   ├── OptionButton.tsx        # Interactive locking MCQ option button
+│   ├── ProgressBar.tsx         # Live score counter and progress tracker
+│   ├── QuestionCard.tsx        # Question container with tags and feedback
+│   ├── QuestionPalette.tsx     # Color-coded interactive jump grid
+│   ├── ResultSummary.tsx       # Score cards, retry actions & analytics
+│   ├── ReviewList.tsx          # Filterable question review (All/Wrong/Skipped)
+│   ├── ThemeProvider.tsx       # Dark/Light mode context provider
+│   └── ThemeToggle.tsx         # Sun/Moon animated switch
+├── data/
+│   └── questions.json          # Master source of 120 MCQs with answers
+└── lib/
+    ├── quiz.ts                 # Fisher-Yates shuffle, quiz builders, score helpers
+    ├── storage.ts              # SSR-safe localStorage persistence wrapper
+    ├── types.ts                # TypeScript interfaces
+    └── quiz.test.ts            # Vitest unit tests for verification
+```
 
 ---
 
-## 📖 Course Credit & Attribution
+## 👨‍💻 Author
 
-- **Course**: NPTEL "Wildlife Ecology" (2026)
-- **Built by**: [Vandit Bajaj](https://www.linkedin.com/in/vandit-bajaj-373829209/) ([@vandit-bajaj](https://github.com/vandit-bajaj))
-- **Inspiration**: [ala-quiz.vercel.app](https://ala-quiz.vercel.app/)
+**Vandit Bajaj**
+* **LinkedIn**: [linkedin.com/in/vandit-bajaj-373829209](https://www.linkedin.com/in/vandit-bajaj-373829209/)
+* **GitHub**: [@vandit-bajaj](https://github.com/vandit-bajaj)
+
+---
+
+## 📄 License & Attribution
+
+- Built as an open-source study companion for the **NPTEL "Wildlife Ecology (2026)"** MOOC.
+- Design inspiration: [ala-quiz.vercel.app](https://ala-quiz.vercel.app/).
