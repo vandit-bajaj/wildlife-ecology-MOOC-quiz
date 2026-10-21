@@ -2,7 +2,9 @@
 
 A fast, modern, and accessible practice quiz website for the **NPTEL "Wildlife Ecology (2026)"** weekly assignments.
 
-Built with **Next.js (App Router)**, **TypeScript**, and **Tailwind CSS**.
+> 🌐 **Live Website**: [https://wildlife-ecology-mooc-quiz.vercel.app](https://wildlife-ecology-mooc-quiz.vercel.app)
+
+Built with **Next.js (App Router)**, **TypeScript**, and **Tailwind CSS**. Designed & developed by [Vandit Bajaj](https://www.linkedin.com/in/vandit-bajaj-373829209/).
 
 ---
 
