@@ -8,6 +8,20 @@ Built with **Next.js (App Router)**, **TypeScript**, and **Tailwind CSS**. Desig
 
 ---
 
+## 🌿 About The Project
+
+Preparing for NPTEL certification exams often means passively reading through dozens of static PDF answer keys. This approach makes it easy to mistake familiarity for true mastery, without actively testing recall or timing.
+
+**Wildlife Ecology Quiz** transforms the complete 12-week NPTEL curriculum (120 questions across 12 assignments) into a fast, gamified, and responsive learning web application:
+
+- **Active Recall Over Passive Reading**: Test yourself question-by-question with immediate answer validation and explanations.
+- **Anti-Memorization Engine**: Real exams don't preserve predictable option positions. The Fisher–Yates engine shuffles both the question sequence and option order while evaluating correctness via robust boolean flags rather than indices.
+- **Targeted Revision ("Retry Missed Questions")**: Finished a quiz with errors? One click launches a customized practice drill containing only the questions you got wrong until you achieve 100% mastery.
+- **Zero Friction & Offline-First**: No signup, no login, and no backend dependencies. Everything runs smoothly in the browser with safe `localStorage` caching for in-progress attempts and personal best scores.
+- **Full Mock Simulation**: Complete 120-question comprehensive mock exam featuring detailed per-assignment mastery analytics upon completion.
+
+---
+
 ## ✨ Features
 
 - **All 120 Curated MCQs**: All 12 assignments (10 questions each) directly sourced from official course materials with verified errata corrections (Week 9 Q5, Q6, Q7).
