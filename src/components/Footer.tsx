@@ -1,5 +1,4 @@
 import React from 'react';
-import Link from 'next/link';
 
 export function Footer() {
   return (
@@ -14,17 +13,27 @@ export function Footer() {
           </figcaption>
         </figure>
 
-        <div className="flex flex-col sm:items-end items-center gap-1">
-          <div className="flex items-center gap-3">
-            <span className="font-medium text-stone-700 dark:text-stone-300">
-              Vandit Bajaj
+        <div className="flex flex-col sm:items-end items-center gap-1.5">
+          <div className="flex items-center gap-1.5 flex-wrap justify-center sm:justify-end">
+            <span className="text-stone-600 dark:text-stone-400 font-medium">
+              Designed &amp; developed by
             </span>
-            <span>•</span>
+            <a
+              href="https://www.linkedin.com/in/vandit-bajaj-373829209/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="font-bold text-stone-900 dark:text-stone-100 hover:text-emerald-600 dark:hover:text-emerald-400 transition-colors"
+            >
+              Vandit Bajaj
+            </a>
+          </div>
+
+          <div className="flex items-center gap-3 text-xs">
             <a
               href="https://github.com/vandit-bajaj"
               target="_blank"
               rel="noopener noreferrer"
-              className="hover:text-emerald-600 dark:hover:text-emerald-400 underline underline-offset-2 transition-colors"
+              className="text-stone-500 hover:text-emerald-600 dark:hover:text-emerald-400 underline underline-offset-2 transition-colors"
             >
               GitHub
             </a>
@@ -33,11 +42,12 @@ export function Footer() {
               href="https://www.linkedin.com/in/vandit-bajaj-373829209/"
               target="_blank"
               rel="noopener noreferrer"
-              className="hover:text-emerald-600 dark:hover:text-emerald-400 underline underline-offset-2 transition-colors"
+              className="text-stone-500 hover:text-emerald-600 dark:hover:text-emerald-400 underline underline-offset-2 transition-colors"
             >
               LinkedIn
             </a>
           </div>
+
           <p className="text-[11px] text-stone-500">
             NPTEL &ldquo;Wildlife Ecology (2026)&rdquo; Course Study Companion
           </p>

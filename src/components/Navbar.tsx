@@ -4,7 +4,7 @@ import React from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { ThemeToggle } from './ThemeToggle';
-import { Mail, Layers } from 'lucide-react';
+import { Layers } from 'lucide-react';
 
 function GithubIcon({ className = 'w-4 h-4' }: { className?: string }) {
   return (
@@ -77,14 +77,6 @@ export function Navbar() {
               className="p-2 rounded-lg hover:text-emerald-600 dark:hover:text-emerald-400 hover:bg-emerald-500/10 transition-colors"
             >
               <LinkedinIcon className="w-4 h-4" />
-            </a>
-            <a
-              href="mailto:placeholder@example.com"
-              aria-label="Email"
-              title="Contact Email"
-              className="p-2 rounded-lg hover:text-emerald-600 dark:hover:text-emerald-400 hover:bg-emerald-500/10 transition-colors"
-            >
-              <Mail className="w-4 h-4" />
             </a>
           </div>
 

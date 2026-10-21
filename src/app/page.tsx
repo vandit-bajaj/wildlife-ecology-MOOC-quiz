@@ -49,6 +49,19 @@ export default function LandingPage() {
           </Link>
         </div>
 
+        {/* Creator flex attribution */}
+        <div className="mt-5 text-xs text-stone-500 dark:text-stone-400 flex items-center gap-1.5">
+          <span>Designed &amp; developed by</span>
+          <a
+            href="https://www.linkedin.com/in/vandit-bajaj-373829209/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="font-bold text-stone-800 dark:text-stone-200 hover:text-emerald-600 dark:hover:text-emerald-400 underline underline-offset-2 transition-colors"
+          >
+            Vandit Bajaj
+          </a>
+        </div>
+
         {/* Feature Badges / Highlights */}
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mt-16 w-full text-left">
           <div className="p-4 rounded-2xl bg-white/60 dark:bg-[#111a14]/60 border border-stone-200/80 dark:border-emerald-950/80 backdrop-blur-xs">
