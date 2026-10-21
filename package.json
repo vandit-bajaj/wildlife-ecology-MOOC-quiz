@@ -16,7 +16,6 @@
     "react-dom": "19.3.0"
   },
   "devDependencies": {
-    "@rolldown/binding-darwin-arm64": "^1.2.14",
     "@tailwindcss/turbopack": "^4",
     "@types/node": "^22.20.5",
     "@types/react": "^19",
@@ -25,6 +24,7 @@
     "eslint-config-next": "16.4.2",
     "tailwindcss": "^4",
     "typescript": "^5",
+    "vite": "^8.3.5",
     "vitest": "^5.0.5"
   }
 }
